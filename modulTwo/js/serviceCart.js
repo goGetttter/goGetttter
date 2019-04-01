@@ -36,8 +36,10 @@ class ServiceCart {
             }
 
         var close = createNewElement.getElement({ tagName: 'div', className: 'cartClose'});
+
+        var html = serviceCart.containerCart.innerHTML;
         close.addEventListener('click', function(){
-            serviceCart.containerCart.innerHTML = ' ';
+            serviceCart.containerCart.innerHTML = html;
             serviceCart.containerCart.style.display = 'none';
         });
 
