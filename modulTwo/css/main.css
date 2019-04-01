@@ -534,16 +534,27 @@ nav {
 	position: fixed;
 	width: 97%;
 	height: 97vh;
-	box-shadow: 
+	box-shadow:
 		0 16px 24px 2px rgba(33, 37, 41, .02),
 		0 6px 30px 5px rgba(33, 37, 41, .04),
-		0 8px 10px -5px rgba(33, 37, 41, .1),;
-	
+		0 8px 10px -5px rgba(33, 37, 41, .1), ;
+
 	transform: translate(-50%, -50%);
 	top: 50%;
 	left: 50%;
 	margin: auto;
-	
+
+
+}
+
+.containerCart::before {
+	content: '';
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
 	background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)),
 		url(../img/photo.jpg);
 	background-position: 10% 30%;
